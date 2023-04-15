@@ -1,19 +1,4 @@
 {
-    import { Lambda } from '@vercel/build-utils';
-
-import { createLambda } from '@vercel/build-utils';
-
-const { createLambda, FileBlob } = require('@vercel/build-utils');
-await createLambda({
-  runtime: 'nodejs8.10',
-  handler: 'index.main',
-  files: {
-    'index.js': new FileBlob({ data: 'exports.main = () => {}' }),
-  },
-});
-
-import { download } from '@vercel/build-utils';
-
     "functions": {
       "api/*.php": {
         "runtime": "vercel-php@0.4.0"
