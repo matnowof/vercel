@@ -1,12 +1,5 @@
 {
-    "functions": {
-      "api/*.php": {
-        "runtime": "vercel-php@0.4.0"
-      }
-    }
-  }
-
-import { Lambda } from '@vercel/build-utils';
+    import { Lambda } from '@vercel/build-utils';
 
 import { createLambda } from '@vercel/build-utils';
 
@@ -20,3 +13,10 @@ await createLambda({
 });
 
 import { download } from '@vercel/build-utils';
+
+    "functions": {
+      "api/*.php": {
+        "runtime": "vercel-php@0.4.0"
+      }
+    }
+  }
